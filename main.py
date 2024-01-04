@@ -14,9 +14,9 @@ db_config = {
     'db': "telepost"
 }
 
-bot = AsyncTeleBot('6703960437:AAGnQ2bCFm8HvJe_p0e9shrTjjYZsSySbwM')
+bot = AsyncTeleBot('6703960437:AAGnQ2bCFm8HvJe_p0e9s')
 API_URL = "https://api-inference.huggingface.co/models/facebook/bart-large-cnn"
-headers = {"Authorization": "Bearer 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"}
+headers = {"Authorization": "Bearer J"}
 summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
 model = MBartForConditionalGeneration.from_pretrained("facebook/mbart-large-50-many-to-many-mmt")
 tokenizer = MBart50TokenizerFast.from_pretrained("facebook/mbart-large-50-many-to-many-mmt")
